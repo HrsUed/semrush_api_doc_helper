@@ -1,0 +1,18 @@
+.name {
+  color: #f00;
+  font-weight: bold;
+}
+
+.des {
+
+}
+
+.tooltip {
+}
+
+.tooltip-inner {
+  max-width: 100%;
+  background-color: #eff;
+  color: #000;
+  text-align: left;
+}
