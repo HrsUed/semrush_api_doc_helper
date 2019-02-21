@@ -26,15 +26,12 @@ const setOptions = () => {
 
 $(() => {
   setOptions();
-  console.log("test");
-  console.log(reportColumnDescriptions);
 
   $(".api-parameters-table").on("click", "td", (ev) => {
     const $td = $(ev.target);
     if ($td.children('span').data('original-title')) return;
 
     const optionName = $td.parent('tr').children('td').first().text();
-    console.log(optionName);
     if (optionName != "export_columns" && optionName != "display_filter") return;
 
     const optionText = $td.html();
