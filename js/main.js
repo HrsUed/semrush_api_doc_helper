@@ -44,7 +44,7 @@ $(() => {
 
     optionArray = optionText.replace(/ /g, '').split(',');
     const filterdOptions = reportColumnDescriptions.filter((item, idx) => {
-      if (optionArray.indexOf(item.name) >= 0) return true
+      return optionArray.indexOf(item.name) >= 0
     });
 
     $span.data('toggle', 'tooltip');
