@@ -26,6 +26,8 @@ const setOptions = () => {
 
 $(() => {
   setOptions();
+  console.log("test");
+  console.log(reportColumnDescriptions);
 
   $(".api-parameters-table").on("click", "td", (ev) => {
     const $td = $(ev.target);
